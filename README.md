@@ -1,4 +1,4 @@
-# run-buddy-two
+# run-buddy-two | "Run Buddy, Inc."
 student project #2: adding mobile support and other functionality
 
 ## Purpose

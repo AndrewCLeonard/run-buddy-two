@@ -10,11 +10,11 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.text-shadow {
-  text-shadow: 2px 2px 8px #000;
-}
-
 /* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
 
 header h1 {
   font-weight: bold;
@@ -30,7 +30,7 @@ header a {
 
 header nav {
   float: right;
-  /* margin: 7px 0; */
+  margin: 7px 0;
 }
 
 header nav ul li {
@@ -67,7 +67,7 @@ footer a {
 }
 
 section {
-  padding: 20px;
+  padding: 60px;
 }
 
 /* Hero Style Start */

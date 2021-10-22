@@ -15,3 +15,5 @@ https://lernantino.github.io/run-buddy/
 Made with ❤️, 🩸, 😅, and 😂 by Andrew Leonard
 
 ### ©️2019 Run Buddy, Inc 
+
+Line 19 edit in main branch in VS Code

@@ -19,6 +19,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px 35px;
+  background-color: #39a6b2;
 }
 
 header h1 {
@@ -26,8 +28,8 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
-  display: inline;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -71,7 +73,7 @@ footer a {
 }
 
 section {
-  padding: 20px;
+  padding: 60px;
 }
 
 /* Hero Style Start */

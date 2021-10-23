@@ -155,20 +155,18 @@ section {
   font-size: 16px;
 }
 
-.intro {
-  text-align: center;
-}
-
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 
+/* Steps Section Start */
+
 .steps {
-  text-align: center;
   background: #fce138;
 }
 
@@ -196,13 +194,14 @@ section {
   font-size: 38px;
 }
 
+/* Steps Section End */
+
 .section-title {
   font-size: 55px;
   color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
+  margin: 0 auto 35px auto;
+  text-align: center;
+  width: 50%;
 }
 
 .primary-border {
@@ -213,8 +212,9 @@ section {
   border-color: #39a6b2;
 }
 
+/* Trainers Section Start */
+
 .trainers {
-  text-align: center;
 }
 
 .trainer {
@@ -252,17 +252,10 @@ section {
   line-height: 1.3;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+/* Trainers Section End */
 
 /* REACH OUT STYLES START */
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -302,3 +295,18 @@ section {
 }
 
 /* REACH OUT STYLES END */
+
+/* UTILITY CLASSES START */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+}
+
+/* UTILITY CLASSES END */

@@ -4,4 +4,4 @@ node_modules
 .prettierrc
 package-lock.json
 package.json
-workspace.code-workspaceg
+assets\workspace.code-workspaceg

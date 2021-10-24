@@ -11,26 +11,22 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.text-shadow {
-  text-shadow: 2px 2px 8px #000;
-}
-
 /* HEADER / NAV BAR STYLES START */
 
 header {
-  background-image: url('../images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 65%;
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
 }
 
 header h1 {
@@ -110,13 +106,13 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
-/* Hero Style End */
 
 .hero-cta {
   width: 35%;
@@ -133,6 +129,8 @@ section {
   color: #fce138;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Hero Form Start */
 
 .hero-form {
   border: 3px solid #024e76;
@@ -167,7 +165,7 @@ section {
 }
 
 .form-input:focus {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 1);
   outline: none;
 }
 
@@ -187,6 +185,70 @@ section {
 .hero-form button:hover {
   background-color: #39a6b2;
 }
+
+.checkbox-wrapper input,
+.radio-wrapper input {
+  opacity: 0;
+}
+
+.checkbox-wrapper label,
+.radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.checkbox-wrapper label::before,
+.radio-wrapper label::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #024e76;
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
+  position: absolute;
+  left: -29px;
+  top: -3px;
+}
+
+.checkbox-wrapper label::after {
+  content: '';
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid #024e76;
+  border-bottom: 2px solid #024e76;
+  position: absolute;
+  left: -26.1px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after,
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+  content: '';
+}
+
+/* Hero Form END */
 
 .section-title {
   font-size: 55px;
